@@ -1,1 +1,107 @@
-<h1>juust</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <header>
+        <strong>Welcome to my dashboard!</strong>
+    </header>
+    <section>
+        <div>
+            <figure>
+                <img src="res/images/me.png" width="128" height="128" alt="My picture">
+                <figcaption>yaboy</figcaption>
+            </figure>
+        </div>
+        <div>
+            <ul>
+                <li>Karl Kristofer</li>
+                <li> 05/10/2003</li>
+                <li> Web App Development </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Agile software development</td>
+                <td>fall</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> Systems modelling </td>
+                <td>fall</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td> Requirements Engineering </td>
+                <td>fall</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> Human Computer Interaction </td>
+                <td>fall</td>
+                <td>65</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <form>
+        <label for="courseTitle">Course title:</label><br>
+        <input type="text" id="courseTitle" name="CourseTitle"><br>
+        <br>
+
+        <label for="semester">Semester:</label><br>
+        <select id="semester" name="Semester">
+            <option value="fall">fall</option>
+            <option value="spring">spring</option>
+        </select>
+        <br>
+
+        <p>
+            <strong>Attendance:</strong> 
+        </p>    
+
+        <input type="radio" id="virtual" name="Attendance" value="virtual">
+        <label for="virtual">Virtual attendance</label><br>
+
+        <input type="radio" id="physical" name="Attendance" value="physical">
+        <label for="physical">Physical attendance</label><br>
+        <br>
+
+        <input type="submit">
+    </form>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target="_blank" title="UT student info system">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank" title="Course wiki">Courses</a>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>
